@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+   <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1:Your age in days</h2>
+        <div class="flex-container-1">
+            <div> 
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>  
+        </div>
+        <div class="flex-container-1">
+            <div id="flex-box-result"></div>
+        </div>  
+       
+    </div>
+    <div class="container-2">
+        <h2>Challenge 2:Cat generator</h2>
+        <button class="btn btn-success" id="cat-generator" onclick="generatecat()">Cat generator</button>
+        <div class="flex-container-2" id="flex-cat-gen">
+
+        </div>
+        </div>    
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissor</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img src="rock.jpg" alt="rock" id="rock" height="150px" width="150px" onclick="rpsgame(this)">
+            <img src="paper.png" alt="rock" id="paper" height="150px" width="150px" onclick="rpsgame(this)">
+            <img src="Scissor.png" alt="rock" id="scissors" height="150px" width="150px" onclick="rpsgame(this)">
+        </div>
+    </div>
+    <div class="container-4">
+        <h2 id="change-my-color">Challenge 4: Change the color of all the button</h2>
+        <div class = "flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">random</option>
+                    <option value="green">green</option>
+                    <option value="red">red</option>
+                    <option value="reset">reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Facebook!</button>
+            <button class="btn btn-success">Whatsapp!</button>
+            <button class="btn btn-warning">Pinterest!</button>
+        </div>
+    </div>
+    <div class="container-5">
+    <h2>Challenge 5: Blackjack</h2>
+    <h3><span id="blackjack-result">let's play</span></h3>
+    <div class="flex-blackjack-row-1">
+        <div id="your-box">
+            <h2>You: <span id="your-blackjack-result">0</span> </h2>
+        </div>
+        <div id="dealer-box">
+            <h2>dealer: <span id="dealer-blackjack-result">0</span> </h2>
+        </div>
+    </div>
+    <div class="flex-blackjack-row-2">
+        <div>
+            <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+            <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+            <button class="btn-lg btn-danger mr-2" id="blackjack-deal-button">Deal</button>
+        </div>
+    </div>
+    <div class="flex-blackjack-row-3">
+        <table>
+            <tr>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Draws</th>
+            </tr>
+            <tr>
+                <td><span id="wins">0</span></td>
+                <td><span id="losses">0</span></td>
+                <td><span id="draws">0</span></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <script src="pag1.js"></script>
+    <button id="1">Button 1</button>
+<button id="2">Button 2</button>
+<button id="3">Button 3</button>
+
+<script type="text/javascript">
+var reply_click = function()
+{
+    alert("Button clicked, id "+this.id+", text"+this.innerHTML);
+}
+document.getElementById('1').onclick = reply_click;
+document.getElementById('2').onclick = reply_click;
+document.getElementById('3').onclick = reply_click;
+</script>
+</body>
+</html>
